@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kunyinla.identifythefootballer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".home" />
+        <activity android:name=".s1p1" />
+        <activity android:name=".s1p2" />
+        <activity android:name=".s1p3" />
+        <activity android:name=".s1p4" />
+        <activity android:name=".s1p5" />
+        <activity android:name=".s1p6" />
+        <activity android:name=".s1p" />
+        <activity android:name=".s1p7" />
+        <activity android:name=".s1p8" />
+        <activity android:name=".s1p9" />
+        <activity android:name=".s1p10" />
+        <activity android:name=".s1p11" />
+        <activity android:name=".s2p1" />
+        <activity android:name=".result2" />
+        <activity android:name=".s3p1" />
+        <activity android:name=".result3" />
+        <activity android:name=".result3g" />
+        <activity android:name=".s4p1" />
+        <activity android:name=".s2p2" />
+        <activity android:name=".s2p3" />
+        <activity android:name=".s2p4" />
+        <activity android:name=".s2p5" />
+        <activity android:name=".s2p6" />
+        <activity android:name=".s2p7" />
+        <activity android:name=".s2p8" />
+        <activity android:name=".s2p9" />
+        <activity android:name=".s2p10" />
+        <activity android:name=".s2p11" />
+        <activity android:name=".s2p12" />
+        <activity android:name=".s2p13" />
+        <activity android:name=".s2p14" />
+        <activity android:name=".s2p15" />
+        <activity android:name=".s2p16" />
+        <activity android:name=".s2p17" />
+        <activity android:name=".s2p18" />
+        <activity android:name=".s2p20" />
+        <activity android:name=".s2p19" />
+        <activity android:name=".s1p12" />
+        <activity android:name=".s1p13" />
+        <activity android:name=".s1p14" />
+        <activity android:name=".s1p15" />
+        <activity android:name=".s1p16" />
+        <activity android:name=".s1p17" />
+        <activity android:name=".s1p18" />
+        <activity android:name=".s1p19" />
+        <activity android:name=".s1p20" />
+        <activity android:name=".s3p2" />
+        <activity android:name=".s3p3" />
+        <activity android:name=".s3p4" />
+        <activity android:name=".s3p5" />
+        <activity android:name=".s3p6" />
+        <activity android:name=".s3p6g" />
+        <activity android:name=".s3p7" />
+        <activity android:name=".s3p8" />
+        <activity android:name=".s3p9" />
+        <activity android:name=".s3p10" />
+        <activity android:name=".s3p11" />
+        <activity android:name=".s3p12" />
+        <activity android:name=".s3p13" />
+        <activity android:name=".s3p14" />
+        <activity android:name=".s3p15" />
+        <activity android:name=".s3p16" />
+        <activity android:name=".s3p17" />
+        <activity android:name=".sp18" />
+        <activity android:name=".s3p19" />
+        <activity android:name=".s3p20"></activity>
+    </application>
+
+</manifest>

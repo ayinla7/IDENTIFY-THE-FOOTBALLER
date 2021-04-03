@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kunyinla.identifythefootballer.s2p1"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:text="1 of 20"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="385dp"
+        android:layout_height="255dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/henrikhmkhitaryan"
+        tools:ignore="ContentDescription,MissingConstraints,ObsoleteLayoutParam"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/answer1s2"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            tools:layout_height="match_parent"
+
+            tools:ignore="ObsoleteLayoutParam,UselessParent">
+
+
+            <RadioButton
+                android:id="@+id/r2a1"
+                android:layout_width="387dp"
+                android:layout_height="wrap_content"
+                android:text=" HENRIKH MKHITARYAN"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/r2b1"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:text="HENRIK MIKHITAYAN"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/r2c1"
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:text="KENRIK MKHITAYAN"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/r2d1"
+                android:layout_width="381dp"
+                android:layout_height="wrap_content"
+                android:text="RadioButton4"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/done1s2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="13dp"
+        android:text="Done"
+        tools:ignore="HardcodedText,InefficientWeight,MissingConstraints,ObsoleteLayoutParam"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="444dp"
+        android:layout_weight="0.12" />
+    <Button
+        android:id="@+id/next1s2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="13dp"
+        android:text="next"
+        tools:ignore="HardcodedText,InefficientWeight,MissingConstraints,ObsoleteLayoutParam"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="444dp"
+        android:layout_weight="0.12" />
+
+</LinearLayout>

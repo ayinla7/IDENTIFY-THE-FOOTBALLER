@@ -1,0 +1,86 @@
+package com.example.kunyinla.identifythefootballer;
+
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class s3p8 extends AppCompatActivity {
+    RadioButton r3a8;
+    RadioButton r3b8;
+    RadioButton r3c8;
+    RadioButton r3d8;
+    RadioGroup answer8s3;
+    RadioButton ansbtn8s3;
+    Button done8s3;
+    Button next8s3;
+    score score= new score();
+    TextView txt;
+    int selectedid1s2;
+    private SharedPreferences sharedpreferences;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_s3p8);
+        done8s3 = (Button) findViewById(R.id.done8s3);
+        next8s3 = (Button) findViewById(R.id.next8s3);
+        r3a8 = (RadioButton) findViewById(R.id.r3a8);
+        r3b8 = (RadioButton) findViewById(R.id.r3b8);
+        r3c8 = (RadioButton) findViewById(R.id.r3c8);
+        r3d8 = (RadioButton) findViewById(R.id.r3d8);
+
+
+        addListenerOnButton();
+
+
+    }
+
+
+    public void addListenerOnButton() {
+        answer8s3 = (RadioGroup) findViewById(R.id.answer8s3);
+        sharedpreferences = getSharedPreferences("my", Context.MODE_PRIVATE);
+        done8s3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (answer8s3.getCheckedRadioButtonId() == -1) {
+                    Toast.makeText(getApplicationContext(), "Please select Gender", Toast.LENGTH_SHORT).show();
+                } else {
+                    selectedid1s2 = answer8s3.getCheckedRadioButtonId();
+                    ansbtn8s3 = (RadioButton) findViewById(selectedid1s2);
+                    if (r3d8.isChecked()) {
+                        SharedPreferences.Editor k = sharedpreferences.edit();
+
+                        k.putInt("SCORE3", sharedpreferences.getInt("SCORE3", 0) + 1);
+                        k.apply();
+                    } else {
+                        SharedPreferences.Editor k = sharedpreferences.edit();
+
+                        k.putInt("SCORE3", sharedpreferences.getInt("SCORE3", 0) + 0);
+                        k.apply();
+                    }
+                    done8s3.setEnabled(false);
+                    //    score.addScore(rb1);
+                }
+            }
+        });
+
+        next8s3.setOnClickListener(new View.OnClickListener()
+
+        {
+            @Override
+            public void onClick (View view){
+                Intent i1 = new Intent(getApplicationContext(), s3p9.class);
+                startActivity(i1);
+
+            }
+        });
+    }
+}
